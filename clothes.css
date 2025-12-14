@@ -58,12 +58,14 @@ body {
 
 /* HERO */
 .hero {
-  height: 85vh;
-  background: url("/fashion-brand/images/linen-set.png") center/cover no-repeat;
+  min-height: 85vh;
+  background: url("images/linen-set.png") center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+
 
 .hero-text {
   background: rgba(255,255,255,0.88);
