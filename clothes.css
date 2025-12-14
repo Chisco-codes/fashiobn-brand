@@ -59,12 +59,14 @@ body {
 /* HERO */
 .hero {
   min-height: 85vh;
-  background: url("images/linen-set.png") center / cover no-repeat;
+  background-image: url("./images/linen-set.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 
 
 .hero-text {
