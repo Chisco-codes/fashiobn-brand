@@ -35,17 +35,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const price = modalPrice.textContent;
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
     const size = document.getElementById('size').value;
     const message = document.getElementById('message').value;
-
-    const text =
-      `Hello, I would like to request the following piece:%0A` +
-      `Product: ${product}%0A` +
-      `Price: ${price}%0A` +
-      `Name: ${name}%0A` +
-      `Email: ${email}%0A` +
-      `Size: ${size}%0A` +
-      `Message: ${message}`;
+const text =
+  `Hello, I would like to request a piece.%0A%0A` +
+  `Product: ${product}%0A` +
+  `Price: ${price}%0A` +
+  `Size: ${size}%0A%0A` +
+  `Customer Details:%0A` +
+  `Name: ${name}%0A` +
+  `Phone: ${phone}%0A` +
+  `Email: ${email}%0A%0A` +
+  `Message:%0A${message}`;
 
     /* 🔴 CHANGE NUMBER HERE */
     const phoneNumber = '233XXXXXXXXX';
