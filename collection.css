@@ -211,6 +211,46 @@ body {
   }
 }
 
+/* =========================
+   PRODUCT GRID (MEN & WOMEN)
+========================= */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.item {
+  background: #fff;
+  padding-bottom: 1.5rem;
+}
+
+.item h4 {
+  margin: 0.8rem 1rem 0;
+  font-size: 1rem;
+}
+
+.item .price {
+  margin: 0.3rem 1rem;
+  font-size: 0.9rem;
+}
+
+.item span {
+  display: block;
+  margin: 0 1rem;
+  font-size: 0.75rem;
+  color: #777;
+}
+
+.item .order {
+  margin: 0.8rem 1rem 0;
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
 
 
 
