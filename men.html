@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>New Arrivals — BrandName</title>
+  <title>Men — BrandName</title>
 
+  <!-- SAME STYLES (NO CHANGES) -->
   <link rel="stylesheet" href="collection.css">
   <link rel="stylesheet" href="modal.css">
   <script src="script.js" defer></script>
@@ -13,53 +14,44 @@
 <body>
 
 <header class="collection-header">
-  <h1>New Arrivals</h1>
-  <p>A curated expression of modern heritage</p>
+  <h1>Men</h1>
+  <p>Contemporary menswear crafted with intention</p>
 </header>
 
 <section class="lookbook">
 
-  <!-- LUXURY EDITORIAL IMAGE -->
   <article class="lookbook-item">
-    <img src="images/linen-set.png" alt="Classic Linen Set">
+<article class="item">
 
-    <div class="lookbook-info">
-      <h3>Classic Linen Set</h3>
-      <span>Limited Release</span>
+  <div class="product-gallery">
+    <img
+      src="images/linen-set-1.png"
+      class="main-image"
+      alt="Classic Linen Set">
+
+    <div class="thumbs">
+      <img src="images/linen-set-1.png" alt="">
+      <img src="images/linen-set-1.png" alt="">
+      <img src="images/linen-set-1.png" alt="">
     </div>
-  </article>
+  </div>
 
-  <!-- PRODUCT CARD (BELOW EDITORIAL) -->
-  <article class="product-card">
+  <h4>Classic Linen Set</h4>
+  <p class="price">₦85,000</p>
+  <span>Limited Release</span>
 
-    <div class="product-gallery">
-      <img
-        src="images/linen-set.png"
-        class="main-image"
-        alt="Classic Linen Set">
+  <a href="#"
+     class="order open-modal"
+     data-product="Classic Linen Set"
+     data-price="₦85,000">
+    Request Piece
+  </a>
 
-      <div class="thumbs">
-        <img src="images/linen-set.png" alt="">
-        <img src="images/linen-set.png" alt="">
-        <img src="images/linen-set.png" alt="">
-      </div>
-    </div>
-
-    <h4>Classic Linen Set</h4>
-    <p class="price">₦85,000</p>
-
-    <a href="#"
-       class="order open-modal"
-       data-product="Classic Linen Set"
-       data-price="₦85,000">
-      Request Piece
-    </a>
-
-  </article>
+</article>
 
 </section>
 
-<!-- MODAL -->
+<!-- SAME MODAL (REUSED) -->
 <div class="modal-overlay" id="enquiryModal">
   <div class="modal">
     <button class="modal-close" id="closeModal">&times;</button>
@@ -69,20 +61,18 @@
 
     <form id="enquiryForm">
 
-      <p class="modal-price">
-        Price: <strong id="modalPrice"></strong>
-      </p>
-
-      <input type="hidden" id="productName">
+        <p class="modal-price">
+  Price: <strong id="modalPrice"></strong>
+</p><input type="hidden" id="productName">
 
       <div class="field">
         <label>Name</label>
-        <input type="text" id="name" required>
+        <input type="text" id="name" placeholder="Enter your name" required>
       </div>
 
       <div class="field">
         <label>Email</label>
-        <input type="email" id="email" required>
+        <input type="email" id="email" placeholder="Enter your email" required>
       </div>
 
       <div class="field">
@@ -97,7 +87,7 @@
 
       <div class="field">
         <label>Message</label>
-        <textarea id="message"></textarea>
+        <textarea id="message" placeholder="Write message"></textarea>
       </div>
 
       <button class="submit-btn">Send Request via WhatsApp</button>
@@ -107,10 +97,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-

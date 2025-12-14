@@ -43,7 +43,7 @@ body {
 }
 
 /* =========================
-   Lookbook Layout
+   Lookbook Layout (LUXURY – DO NOT TOUCH)
 ========================= */
 .lookbook {
   display: grid;
@@ -52,11 +52,11 @@ body {
 
 .lookbook-item {
   position: relative;
-  overflow: hidden; /* IMPORTANT for hover zoom */
+  overflow: hidden;
 }
 
 /* =========================
-   Images
+   Lookbook Images (FULL SCREEN)
 ========================= */
 .lookbook-item img {
   width: 100%;
@@ -79,7 +79,6 @@ body {
   pointer-events: none;
 }
 
-/* Hover Effects */
 .lookbook-item:hover img {
   transform: scale(1.04);
 }
@@ -117,14 +116,104 @@ body {
   margin-top: 0.3rem;
 }
 
-.lookbook-info a {
+/* =========================
+   PRODUCT CARD (SEPARATE – SAFE)
+========================= */
+.product-card {
+  padding: 3rem 1.2rem;
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.product-card h4 {
+  margin: 1.2rem 0 0.3rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.price {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 0.8rem;
+}
+
+/* =========================
+   Product Gallery
+========================= */
+.product-gallery {
+  width: 100%;
+}
+
+.product-gallery .main-image {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+}
+
+/* Thumbnails */
+.thumbs {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.thumbs img {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.thumbs img:hover {
+  opacity: 1;
+}
+
+/* =========================
+   Order Button
+========================= */
+.order {
   display: inline-block;
-  margin-top: 0.8rem;
+  margin-top: 1.2rem;
   font-size: 0.75rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
-  border-bottom: 1px solid #fff;
+  color: #111;
+  border-bottom: 1px solid #111;
 }
+
+/* =========================
+   Mobile Refinement (IMPORTANT)
+========================= */
+@media (max-width: 768px) {
+
+  .lookbook-item img {
+    height: 85vh; /* NOT too zoomed */
+  }
+
+  .lookbook-info {
+    bottom: 24px;
+    left: 20px;
+  }
+
+  .product-card {
+    padding: 2.2rem 1rem;
+  }
+
+  .thumbs img {
+    width: 52px;
+    height: 70px;
+  }
+}
+
+
+
+
+
+
 

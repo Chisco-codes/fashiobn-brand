@@ -197,3 +197,83 @@ body {
   text-decoration: none;
   color: #111;
 }
+
+.main-nav {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.main-nav a {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111;
+  position: relative;
+}
+
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background: #111;
+  transition: width 0.4s ease;
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+.price {
+  margin: 0.3rem 0;
+  font-size: 0.85rem;
+  color: #444;
+  font-weight: 400;
+}
+
+/* =========================
+   Product Image Gallery
+========================= */
+.product-gallery {
+  width: 100%;
+}
+
+.main-image {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+/* Thumbnails */
+.thumbs {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.thumbs img {
+  width: 22%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.thumbs img:hover,
+.thumbs img.active {
+  opacity: 1;
+}
+
+/* Mobile safety */
+@media (max-width: 600px) {
+  .thumbs img {
+    width: 24%;
+  }
+}

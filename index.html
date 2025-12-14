@@ -5,19 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BrandName</title>
 
-<link rel="stylesheet" href="/fashion-brand/clothes.css">
-<link rel="stylesheet" href="/fashion-brand/modal.css">
-<script src="/fashion-brand/scritp.js" defer></script>
+  <link rel="stylesheet" href="clothes.css">
+  <link rel="stylesheet" href="modal.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  
-<img src="images/images">
 
+<img src="images/images.png" alt="Brand hero image">
 
 <header class="header">
   <h1 class="brand">BrandName</h1>
   <p class="tagline">Contemporary Fashion for Men & Women</p>
+
+  <nav class="main-nav">
+    <a href="men.html">Men</a>
+    <a href="women.html">Women</a>
+  </nav>
 </header>
 
 <section class="hero">
@@ -36,24 +40,53 @@
   </header>
 
   <div class="grid">
-    <article class="item">
-      <img src="images/linen-set (1).png" alt="Classic Linen Set">
-      <h4>Classic Linen Set</h4>
-      <span>Limited Release</span>
-      <a href="#" class="order open-modal" data-product="Classic Linen Set">
-        Request Piece
-      </a>
-    </article>
-  </div>
+  <article class="item">
+    <div class="product-gallery">
+      <img src="images/linen-set.png" class="main-image" alt="Classic Linen Set">
+      <div class="thumbs">
+        <img src="images/linen-set.png" alt="">
+        <img src="images/linen-set.png" alt="">
+        <img src="images/linen-set.png" alt="">
+      </div>
+    </div>
 
+    <h4>Classic Linen Set</h4>
+    <p class="price">₦85,000</p>
+    <span>Limited Release</span>
 
-  <div class="grid">
-    <article class="item">
-      <img src="images/nativ-men.png" alt="Classic Linen Set">
-      <h4>Classic Linen Set</h4>
-      <span>Limited Release</span>
-      <a href="#" class="order open-modal" data-product="Classic Linen Set">
-        Request Piece
+    <a href="#"
+       class="order open-modal"
+       data-product="Classic Linen Set"
+       data-price="₦85,000">
+      Request Piece
+    </a>
+  </article>
+
+  <article class="item">
+    <!-- second product here -->
+ <div class="product-gallery">
+      <img src="images/linen-set.png" class="main-image" alt="Classic Linen Set">
+      <div class="thumbs">
+        <img src="images/linen-set.png" alt="">
+        <img src="images/linen-set.png" alt="">
+        <img src="images/linen-set.png" alt="">
+      </div>
+    </div>
+
+    <h4>Classic Linen Set</h4>
+    <p class="price">₦85,000</p>
+    <span>Limited Release</span>
+
+    <a href="#"
+       class="order open-modal"
+       data-product="Classic Linen Set"
+       data-price="₦85,000">
+      Request Piece
+    </a>
+  </article>
+
+</div>
+
 </section>
 
 <footer class="footer">
@@ -71,8 +104,10 @@
     <p class="modal-sub">Complete the form below and our team will contact you.</p>
 
     <form id="enquiryForm">
-      <input type="hidden" id="productName">
-
+     
+      <p class="modal-price">
+  Price: <strong id="modalPrice"></strong>
+</p><input type="hidden" id="productName">
       <div class="field">
         <label>Name</label>
         <input type="text" id="name" placeholder="Enter your name" required>
@@ -105,3 +140,4 @@
 
 </body>
 </html>
+
