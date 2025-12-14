@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap');
+
+/* LIGHT RESET – SAFE & MODERN */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* BASE */
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f6f4f1;
+  color: #111;
+  line-height: 1.7;
+}
+
+/* HEADER */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(246, 244, 241, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  text-align: center;
+  padding: 1.8rem 1rem;
+}
+
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+.tagline {
+  font-size: 0.8rem;
+  color: #777;
+  letter-spacing: 1px;
+}
+
+/* HERO */
+.hero {
+  height: 85vh;
+  background: url("/fashion-brand/images/linen-set.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  background: rgba(255,255,255,0.88);
+  padding: 2.5rem 3rem;
+  text-align: center;
+}
+
+.collection-label {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #777;
+}
+
+.hero-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  margin: 1rem 0;
+}
+
+.hero-text p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.7rem 2rem;
+  border: 1px solid #111;
+  text-decoration: none;
+  color: #111;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  background: #111;
+  color: #fff;
+}
+
+/* COLLECTION PREVIEW */
+.collection {
+  padding: 5rem 2rem;
+}
+
+.section-header {
+  max-width: 500px;
+  margin-bottom: 3rem;
+}
+
+.section-header h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+}
+
+.item img {
+  width: 100%;
+  transition: transform 0.8s ease;
+}
+
+.item h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.item span {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: #777;
+}
+
+.item:hover img {
+  transform: scale(1.03);
+}
+
+/* ORDER LINK */
+.order {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-size: 0.7rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111;
+  border-bottom: 1px solid #111;
+  transition: opacity 0.3s ease;
+}
+
+.order:hover {
+  opacity: 0.6;
+}
+
+/* BRAND STORY */
+.brand-story {
+  max-width: 600px;
+  margin: 6rem auto;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 3rem 1rem;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+
+.footer a {
+  margin: 0 0.6rem;
+  text-decoration: none;
+  color: #111;
+}

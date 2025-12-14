@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BrandName</title>
+
+<link rel="stylesheet" href="/fashion-brand/clothes.css">
+<link rel="stylesheet" href="/fashion-brand/modal.css">
+<script src="/fashion-brand/scritp.js" defer></script>
+</head>
+
+<body>
+  
+<img src="images/images">
+
+
+<header class="header">
+  <h1 class="brand">BrandName</h1>
+  <p class="tagline">Contemporary Fashion for Men & Women</p>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <span class="collection-label">Limited Collection — 2025</span>
+    <h2>Designed with Intention</h2>
+    <p>Timeless pieces crafted for modern expression.</p>
+    <a href="collection.html" class="btn">Explore Collection</a>
+  </div>
+</section>
+
+<section class="collection">
+  <header class="section-header">
+    <h3>Featured Pieces</h3>
+    <p>Crafted in limited quantities.</p>
+  </header>
+
+  <div class="grid">
+    <article class="item">
+      <img src="images/linen-set (1).png" alt="Classic Linen Set">
+      <h4>Classic Linen Set</h4>
+      <span>Limited Release</span>
+      <a href="#" class="order open-modal" data-product="Classic Linen Set">
+        Request Piece
+      </a>
+    </article>
+  </div>
+
+
+  <div class="grid">
+    <article class="item">
+      <img src="images/nativ-men.png" alt="Classic Linen Set">
+      <h4>Classic Linen Set</h4>
+      <span>Limited Release</span>
+      <a href="#" class="order open-modal" data-product="Classic Linen Set">
+        Request Piece
+</section>
+
+<footer class="footer">
+  <p>© 2025 BrandName</p>
+  <a href="#">Instagram</a>
+  <a href="#">WhatsApp</a>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="enquiryModal">
+  <div class="modal">
+    <button class="modal-close" id="closeModal">&times;</button>
+
+    <h3>Private Order Request</h3>
+    <p class="modal-sub">Complete the form below and our team will contact you.</p>
+
+    <form id="enquiryForm">
+      <input type="hidden" id="productName">
+
+      <div class="field">
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="field">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="field">
+        <label>Preferred Size</label>
+        <select id="size">
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Message</label>
+        <textarea id="message" placeholder="Write message"></textarea>
+      </div>
+
+      <button class="submit-btn">Send Request via WhatsApp</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

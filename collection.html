@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New Arrivals — BrandName</title>
+
+  <link rel="stylesheet" href="/fashion-brand/collection.css">
+  <link rel="stylesheet" href="/fashion-brand/modal.css">
+  <script src="/fashion-brand/scritp.js" defer></script>
+</head>
+
+<body>
+
+<header class="collection-header">
+  <h1>New Arrivals</h1>
+  <p>A curated expression of modern heritage</p>
+</header>
+
+<section class="lookbook">
+  <article class="lookbook-item">
+    <img src="images/culture.png" alt="ỌBA Signature Set">
+    <div class="lookbook-info">
+      <h3>ỌBA Signature Set</h3>
+      <span>Men • Limited</span>
+      <a href="#" class="open-modal" data-product="ỌBA Signature Set">
+        Request Piece
+      </a>
+    </div>
+  </article>
+
+  <article class="lookbook-item">
+    <img src="images/linen-set (1).png" alt="Modern Native Wear">
+    <div class="lookbook-info">
+      <h3>Modern Native Wear</h3>
+      <span>Women • 2025</span>
+      <a href="#" class="open-modal" data-product="Modern Native Wear">
+        Request Piece
+      </a>
+    </div>
+  </article>
+</section>
+
+<!-- SAME MODAL -->
+<div class="modal-overlay" id="enquiryModal">
+  <div class="modal">
+    <button class="modal-close" id="closeModal">&times;</button>
+    <h3>Private Order Request</h3>
+    <p class="modal-sub">Complete the form below and our team will contact you.</p>
+
+    <form id="enquiryForm">
+      <input type="hidden" id="productName">
+      <div class="field">
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="field">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email"  required>
+      </div>
+      <div class="field">
+        <label>Preferred Size</label>
+        <select id="size">
+          <option>S</option><option>M</option><option>L</option><option>XL</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Message</label>
+        <textarea id="message" placeholder="Write message"></textarea>
+      </div>
+      <button class="submit-btn">Send Request via WhatsApp</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+

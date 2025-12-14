@@ -1,0 +1,86 @@
+/* =========================
+   Modal Overlay
+========================= */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* =========================
+   Modal Box
+========================= */
+.modal {
+  background: #f6f4f1;
+  padding: 3rem;
+  width: 90%;
+  max-width: 420px;
+  position: relative;
+
+  transform: translateY(20px) scale(0.98);
+  opacity: 0;
+  transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.modal-overlay.active .modal {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+/* =========================
+   Form
+========================= */
+.field {
+  margin-bottom: 1.2rem;
+}
+
+.field label {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.field input,
+.field textarea,
+.field select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  background: transparent;
+  font-size: 0.85rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #111;
+  background: #111;
+  color: #fff;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
